@@ -8,4 +8,4 @@ class ProjectSerializer(serializers.ModelSerializer):
         # Estos son los campos de mi tabla Project que voy a mostrar en la respuesta al cliente
         fields = ('id', 'tittle', 'description', 'technology', 'create_at')
         # Este campo solo se podra visualizar y no editar
-        read_only_fields = ('create_at')
+        read_only_fields = ('create_at',)
